@@ -11,7 +11,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Advice generator app</title>
+    <title>Advice generator app</title>
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
@@ -44,7 +44,7 @@
         font-size: 13px;
         padding: 7% 0 7% 0%;
         text-align: center;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
       }
 
       #advice-wrapper #advice-text {
@@ -171,12 +171,12 @@
       <!-- Advice text goes here -->
       <div id="advice-text"></div>
       <div class="separator">
-        <img src="./images/pattern-divider-desktop.svg" id="desk-separator" />
-        <img src="./images/pattern-divider-mobile.svg" id="mob-separator" />
+        <img src="./images/pattern-divider-desktop.svg" id="desk-separator" alt ="seperator"/>
+        <img src="./images/pattern-divider-mobile.svg" id="mob-separator" alt ="seperator"/>
       </div>
       <div class="button-wrapper">
-        <button onclick="getData()">
-          <img src="./images/icon-dice.svg" />
+        <button id="get-advice-btn">
+          <img src="./images/icon-dice.svg" alt ="dice-icon"/>
         </button>
       </div>
     </div>
@@ -194,8 +194,11 @@
           })
           .catch((err) => console.log("error : " + err));
       }
-
       getData();
+
+      const getAdviceBtn = document.getElementById("get-advice-btn");
+
+      getAdviceBtn.addEventListener('click', ()=>{ getData();})
     </script>
 
     <div class="attribution">
