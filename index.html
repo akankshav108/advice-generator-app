@@ -14,14 +14,20 @@
     <title>Advice generator app</title>
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      
       body {
         padding: 0;
         margin: 0;
         background-color: hsl(218, 23%, 16%);
         text-align: center;
         box-sizing: border-box;
-        font-family: 'Manrope', sans-serif;
+        font-family: "Manrope", sans-serif;
       }
 
       #advice-wrapper {
@@ -144,9 +150,7 @@
         }
       }
 
-
       @media (max-width: 650px) {
-
         #advice-wrapper {
           width: 90%;
           top: 30%;
@@ -159,7 +163,6 @@
         #mob-separator {
           display: block;
         }
-        
       }
     </style>
   </head>
@@ -171,12 +174,20 @@
       <!-- Advice text goes here -->
       <div id="advice-text"></div>
       <div class="separator">
-        <img src="./images/pattern-divider-desktop.svg" id="desk-separator" alt ="seperator"/>
-        <img src="./images/pattern-divider-mobile.svg" id="mob-separator" alt ="seperator"/>
+        <img
+          src="./images/pattern-divider-desktop.svg"
+          id="desk-separator"
+          alt="seperator"
+        />
+        <img
+          src="./images/pattern-divider-mobile.svg"
+          id="mob-separator"
+          alt="seperator"
+        />
       </div>
       <div class="button-wrapper">
         <button id="get-advice-btn">
-          <img src="./images/icon-dice.svg" alt ="dice-icon"/>
+          <img src="./images/icon-dice.svg" alt="dice-icon" />
         </button>
       </div>
     </div>
@@ -198,7 +209,9 @@
 
       const getAdviceBtn = document.getElementById("get-advice-btn");
 
-      getAdviceBtn.addEventListener('click', ()=>{ getData();})
+      getAdviceBtn.addEventListener("click", () => {
+        getData();
+      });
     </script>
 
     <div class="attribution">
