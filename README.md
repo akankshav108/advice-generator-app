@@ -92,7 +92,7 @@ I want to learn more about different ways of fetching apis and also REST APIs.
 ## Author
 
 - Website - Coming soon
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/akankshav108)
+- Frontend Mentor - [@akankshav108](https://www.frontendmentor.io/profile/akankshav108)
 
 ## Acknowledgments
 
