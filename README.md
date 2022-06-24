@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/akankshav108/advice-generator-app)
-- Live Site URL: [Add live site URL here](https://akankshav108.github.io/advice-generator-app/)
+- Solution URL: [solution URL](https://github.com/akankshav108/advice-generator-app)
+- Live Site URL: [live site URL](https://akankshav108.github.io/advice-generator-app/)
 
 ## My process
 
@@ -43,13 +43,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript Async/Await
+- Async/Await
 
 ### What I learned
 
