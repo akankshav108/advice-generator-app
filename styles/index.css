@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+    
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(218, 23%, 16%);
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+#advice-wrapper {
+  background-color: hsl(217, 19%, 24%);
+  width: 38%;
+  min-height: 25vh;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  border-radius: 10px;
+  -webkit-box-shadow: 28px 32px 26px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 28px 32px 26px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 28px 32px 26px 0px rgba(0, 0, 0, 0.11);
+}
+
+#advice-wrapper .advice-number {
+  color: hsl(150, 100%, 66%);
+  font-size: 13px;
+  padding: 7% 0 7% 0%;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+#advice-wrapper #advice-text {
+  font-size: 28px;
+  text-align: center;
+  padding: 0% 5% 0% 5%;
+  color: hsl(193, 38%, 86%);
+}
+
+#advice-wrapper #advice-text::before {
+  content: open-quote;
+}
+
+#advice-wrapper #advice-text::after {
+  content: close-quote;
+}
+
+#advice-wrapper .separator {
+  display: flex;
+  justify-content: space-around;
+  padding: 7% 0 5% 0;
+}
+
+#mob-separator {
+  display: none;
+}
+
+#advice-wrapper .button-wrapper {
+  min-height: 4vh;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2%;
+}
+#advice-wrapper .button-wrapper button {
+  all: unset;
+  background-color: rgb(83, 255, 171, 255);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#advice-wrapper .button-wrapper button:hover {
+  -webkit-box-shadow: 0px -1px 28px 12px rgba(83, 255, 171, 0.5);
+  -moz-box-shadow: 0px -1px 28px 12px rgba(83, 255, 171, 0.5);
+  box-shadow: 0px -1px 28px 12px rgba(83, 255, 171, 0.5);
+}
+
+#advice-wrapper .button-wrapper button:active img {
+  animation: shake 0.1s ease-in-out;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2%;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 48%, 67%);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+/*----------Media Queries---------- */
+
+@media (max-width: 1399px) {
+  #advice-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #advice-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 650px) {
+  #advice-wrapper {
+    width: 90%;
+    top: 30%;
+  }
+
+  #desk-separator {
+    display: none;
+  }
+
+  #mob-separator {
+    display: block;
+  }
+
+  #advice-wrapper .button-wrapper button {
+    cursor: none;
+  }
+}
